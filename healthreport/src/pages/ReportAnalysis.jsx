@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
+import ReportCard from "../components/report/ReportCard";
 //import { getReportAnalysis } from "../services/reportService";
 
 const ReportAnalysis = () => {
@@ -158,6 +159,7 @@ const ReportAnalysis = () => {
             </div>
           </div>
         </div>
+       
       </div>
     </div>
   );

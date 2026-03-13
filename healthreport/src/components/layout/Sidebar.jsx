@@ -4,7 +4,7 @@ const navItems = [
     { name: "Profile", path: "/profile" },
     { name: "Dashboard", path: "/dashboard" },
     { name: "Upload Report", path: "/upload-report" },
-    { name: "Report Analysis", path: "/report-analysis/1" },
+    { name: "Report Analysis", path: "/report-analysis/:id" },
     { name: "Health Insights", path: "/insights" },
     { name: "Health History", path: "/history" },
     { name: "Diet Plan", path: "/dietplan" },
