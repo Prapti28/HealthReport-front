@@ -37,7 +37,7 @@ const UploadReport = () => {
     }
   };
 
-  /* drag-and-drop handlers — only update UI state, file picked via input */
+  
   const handleDragOver = (e) => { e.preventDefault(); setDragOver(true); };
   const handleDragLeave = () => setDragOver(false);
   const handleDrop = (e) => {
