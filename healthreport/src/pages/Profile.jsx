@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
 import Sidebar from "../components/layout/Sidebar";
 import HealthBarChart from "../components/charts/HealthBarChart";
+import HealthLineChart from "../components/charts/HealthLineChart";
+import HealthPieChart from "../components/charts/HealthPieChart";
 //import { getUserProfile, updateUserProfile } from "../services/authService";
 
 const Profile = () => {
@@ -155,6 +157,8 @@ const Profile = () => {
           </form>
         </div>
         <HealthBarChart/>
+        <HealthLineChart/>
+        <HealthPieChart/>
       </div>
       </div>
     </div>
