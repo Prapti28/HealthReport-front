@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
+import Sidebar from "../components/layout/Sidebar";
+import HealthBarChart from "../components/charts/HealthBarChart";
 //import { getUserProfile, updateUserProfile } from "../services/authService";
 
 const Profile = () => {
@@ -81,7 +83,8 @@ const Profile = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <Navbar />
-
+      <div className="flex">
+        <Sidebar/>
       <div className="mx-auto max-w-4xl px-6 py-10">
         <div className="mb-8">
           <h1 className="text-3xl font-semibold">Profile</h1>
@@ -151,6 +154,8 @@ const Profile = () => {
             </div>
           </form>
         </div>
+        <HealthBarChart/>
+      </div>
       </div>
     </div>
   );

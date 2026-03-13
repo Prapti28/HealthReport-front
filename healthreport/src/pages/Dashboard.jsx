@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
+import Sidebar from "../components/layout/Sidebar";
 
 const summaryCards = [
   {
@@ -55,7 +56,8 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <Navbar />
-
+      <div className="flex">
+        <Sidebar/>
       <div className="mx-auto max-w-6xl px-6 py-10">
         <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
@@ -181,6 +183,7 @@ const Dashboard = () => {
             </p>
           </Link>
         </div>
+      </div>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
+import Sidebar from "../components/layout/Sidebar";
 //import { getHealthHistory } from "../services/healthService";
 
 const HealthHistory = () => {
@@ -48,7 +49,8 @@ const HealthHistory = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <Navbar />
-
+      <div className="flex">
+        <Sidebar/>
       <div className="mx-auto max-w-6xl px-6 py-10">
         <div className="mb-8">
           <h1 className="text-3xl font-semibold">Health History</h1>
@@ -132,6 +134,7 @@ const HealthHistory = () => {
             <p className="text-sm text-gray-500">No reports found yet.</p>
           )}
         </div>
+      </div>
       </div>
     </div>
   );

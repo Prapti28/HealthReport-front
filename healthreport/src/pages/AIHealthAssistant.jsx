@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/layout/Navbar";
+import Sidebar from "../components/layout/Sidebar";
+
 //import { sendHealthMessage } from "../services/aiService";
 
 const AIHealthAssistant = () => {
@@ -47,7 +49,8 @@ const AIHealthAssistant = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <Navbar />
-
+      <div className="flex">
+        <Sidebar/>
       <div className="mx-auto max-w-5xl px-6 py-10">
         <div className="mb-8">
           <h1 className="text-3xl font-semibold">AI Health Assistant</h1>
@@ -113,6 +116,7 @@ const AIHealthAssistant = () => {
             </button>
           </form>
         </div>
+      </div>
       </div>
     </div>
   );

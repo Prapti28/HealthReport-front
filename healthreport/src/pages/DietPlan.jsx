@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/layout/Navbar";
+import Sidebar from "../components/layout/Sidebar";
 //import { getDietPlan } from "../services/healthService";
 
 const DietPlan = () => {
@@ -47,7 +48,8 @@ const DietPlan = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <Navbar />
-
+    <div className="flex">
+      <Sidebar/>
       <div className="mx-auto max-w-6xl px-6 py-10">
         <div className="mb-8">
           <h1 className="text-3xl font-semibold">Diet Plan</h1>
@@ -143,6 +145,7 @@ const DietPlan = () => {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
